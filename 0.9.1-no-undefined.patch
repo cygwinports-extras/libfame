@@ -1,0 +1,10 @@
+--- origsrc/libfame-0.9.1/src/Makefile.am	2002-04-30 11:25:20.000000000 -0500
++++ src/libfame-0.9.1/src/Makefile.am	2008-09-04 20:16:46.953275100 -0500
+@@ -57,6 +57,7 @@
+ 	fame_malloc.h
+ 
+ libfame_la_LDFLAGS = \
++		-no-undefined \
+         -release $(LT_RELEASE) \
+         -version-info $(LT_CURRENT):$(LT_REVISION):$(LT_AGE)
+ 

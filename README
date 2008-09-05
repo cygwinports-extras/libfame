@@ -1,0 +1,116 @@
+libfame
+-------------------------------------------
+libFAME is a library for fast (real-time) MPEG video encoding, written
+in C and assembly. libFAME currently allows encoding of fast MPEG-1
+video, as well as MPEG-4 (OpenDivX compatible) rectangular and arbitrary
+shaped video.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+
+Build requirements:
+  autoconf2.5-2.61-1
+  automake1.7-1.7.9-3
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical homepage:
+  http://fame.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/fame/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libfame-0.9.1-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libfame-0.9.1-1.cygport all
+
+This will create:
+  /usr/src/libfame-0.9.1-1-src.tar.bz2
+  /usr/src/libfame-0.9.1-1.tar.bz2
+  /usr/src/libfame-devel-0.9.1-1.tar.bz2
+  /usr/src/libfame09-0.9.1-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+(libfame09)
+  /usr/bin/cygfame-0-9-1.dll
+  /usr/share/doc/libfame-0.9.1/AUTHORS
+  /usr/share/doc/libfame-0.9.1/BUGS
+  /usr/share/doc/libfame-0.9.1/Changes
+  /usr/share/doc/libfame-0.9.1/COPYING
+  /usr/share/doc/libfame-0.9.1/INSTALL
+  /usr/share/doc/libfame-0.9.1/README
+  /usr/share/doc/libfame-0.9.1/TODO
+
+(libfame-devel)
+  /usr/bin/libfame-config
+  /usr/include/fame.h
+  /usr/include/fame_bitbuffer.h
+  /usr/include/fame_decoder.h
+  /usr/include/fame_decoder_mpeg.h
+  /usr/include/fame_encoder.h
+  /usr/include/fame_encoder_mpeg.h
+  /usr/include/fame_malloc.h
+  /usr/include/fame_monitor.h
+  /usr/include/fame_motion.h
+  /usr/include/fame_motion_fourstep.h
+  /usr/include/fame_motion_none.h
+  /usr/include/fame_motion_pmvfast.h
+  /usr/include/fame_profile.h
+  /usr/include/fame_profile_mpeg.h
+  /usr/include/fame_profile_mpeg1.h
+  /usr/include/fame_profile_mpeg4_shape.h
+  /usr/include/fame_profile_mpeg4_simple.h
+  /usr/include/fame_profile_stats.h
+  /usr/include/fame_rate.h
+  /usr/include/fame_rate_1param.h
+  /usr/include/fame_rate_simple.h
+  /usr/include/fame_shape.h
+  /usr/include/fame_syntax.h
+  /usr/include/fame_syntax_mpeg1.h
+  /usr/include/fame_syntax_mpeg4.h
+  /usr/include/fame_version.h
+  /usr/lib/libfame.a
+  /usr/lib/libfame.dll.a
+  /usr/lib/libfame.la
+  /usr/share/aclocal/libfame.m4
+  /usr/share/man/man3/fame_close.3.gz
+  /usr/share/man/man3/fame_encode_frame.3.gz
+  /usr/share/man/man3/fame_encode_slice.3.gz
+  /usr/share/man/man3/fame_end_frame.3.gz
+  /usr/share/man/man3/fame_get_object.3.gz
+  /usr/share/man/man3/fame_init.3.gz
+  /usr/share/man/man3/fame_open.3.gz
+  /usr/share/man/man3/fame_register.3.gz
+  /usr/share/man/man3/fame_start_frame.3.gz
+  /usr/share/man/man3/fame_unregister.3.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.9.1-2 -----
+Rebuilt with cygport.
+
+----- version 0.9.1-1 -----
+Version bump.
+Includes patches from Gentoo (ebuild 0.9.1-r1) for gcc-3.4 compilation.
+
+----- version 0.9.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

@@ -1,0 +1,8 @@
+category: Video
+requires: cygwin libfame09
+external-source: libfame
+sdesc: "Real-time MPEG video encoding library (runtime)"
+ldesc: "libFAME is a library for fast (real-time) MPEG video encoding,
+written in C and assembly. libFAME currently allows encoding of fast
+MPEG-1 video, as well as MPEG-4 (OpenDivX compatible) rectangular and
+arbitrary shaped video."

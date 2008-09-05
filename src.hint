@@ -1,0 +1,7 @@
+category: Video
+requires: libfame-devel
+sdesc: "Real-time MPEG video encoding library (source)"
+ldesc: "libFAME is a library for fast (real-time) MPEG video encoding,
+written in C and assembly. libFAME currently allows encoding of fast
+MPEG-1 video, as well as MPEG-4 (OpenDivX compatible) rectangular and
+arbitrary shaped video."

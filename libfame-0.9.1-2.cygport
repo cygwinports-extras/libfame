@@ -1,0 +1,17 @@
+DESCRIPTION="Real-time MPEG video encoding library"
+HOMEPAGE="http://fame.sourceforge.net/"
+SRC_URI="mirror://sourceforge/fame/${P}.tar.gz"
+PATCH_URI="
+	https://svn.pardus.org.tr/pardus/devel/programming/libs/libfame/files/01_all_m4.patch
+	https://svn.pardus.org.tr/pardus/devel/programming/libs/libfame/files/03_all_gcc34.patch
+	https://svn.pardus.org.tr/pardus/devel/programming/libs/libfame/files/04_all_pic.patch
+	0.9.1-no-undefined.patch
+"
+
+DISTCLEANFILES="acinclude.m4 ${PN}-config"
+
+PKG_NAMES="${PN} ${PN}${PV_MAJ_MIN/.} ${PN}-devel"
+PKG_HINTS="src dll devel"
+PKG_CONTENTS[0]=	# empty
+PKG_CONTENTS[1]="usr/bin/*-${PV_MAJ_MIN/./-}-1.dll usr/share/doc/"
+PKG_CONTENTS[2]="usr/bin/${PN}-config usr/include usr/lib/ usr/share/aclocal/ usr/share/man/"
